@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+    
+<!-- Mirrored from ceezee.io/files/coin/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 01 Jun 2021 16:07:42 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+        <base  />
+        <meta content="text/html;charset=utf-8" http-equiv="Content-Type" />
+        <meta content="utf-8" http-equiv="encoding" />
+        <title>Coin</title>
+        <style>
+            html,
+            body {
+                margin: 0;
+                height: 100%;
+                width: 100%;
+            }
+
+            #coin {
+                /*background: url(assets/background.jpg) no-repeat;*/
+                background-size: cover;
+                height: 100%;
+                width: 100%;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="coin"></div>
+        <script type="module">
+            import createCoin from "./js/rrcoin/rrcoin.js";
+
+            const config = {
+                animation: {
+                    rotationsPerSecond: {
+                        x: 0,
+                        y: -1 / 3,
+                        z: 0
+                    }
+                },
+                background: {
+                    color: 0x000000, // Black
+                    transparent: true
+                },
+                camera: {
+                    fov: 40,
+                    position: {
+                        x: 0,
+                        y: 0,
+                        z: 0.2
+                    }
+                },
+                debug: {
+                    allowControl: false
+                },
+                handleResize: true,
+                lensflare: {
+                    textureArtifactLocation: "assets/lensflare/hexangle.png",
+                    textureLensflareLocation: "assets/lensflare/reflection.png"
+                },
+                lights: [
+                    {
+                        color: 0xffbb54,
+                        intensity: 3,
+                        position: {
+                            x: 2,
+                            y: 0,
+                            z: 1
+                        }
+                    },
+                    {
+                        color: 0xffbb54,
+                        intensity: 4,
+                        position: {
+                            x: -2,
+                            y: 0,
+                            z: 1
+                        }
+                    }
+                ],
+                model: {
+                    location: "models/SAFU_Coin.glb"
+                    // For mobile devices, maybe load this one with way smaller textures
+                    // location: 'models/SAFU_Coin_LowRes.glb',
+                },
+                progressCallback: progress => {
+                    // Nothing yet, but returns a number between 0 and 1 based on loading progress
+                }
+            };
+
+            // This actually creates the renderer and places it at the given id (e.g. 'coin')
+            createCoin("coin", config);
+        </script>
+    </body>
+
+<!-- Mirrored from ceezee.io/files/coin/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 01 Jun 2021 16:07:42 GMT -->
+</html>

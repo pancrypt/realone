@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <title>$SHINU Shelter Inu</title>
+<meta name="description" content="Shelter Inu $SHINU"/>
+<meta property="og:image" content="img/favicon.jpg"/>
+<meta property="og:type" content="article"/>
+<meta property="og:description" content="Shelter Inu $SHINU"/>
+<meta property="og:title" content="Shelter Inu $SHINU"/>
+<meta name="twitter:title" content="Shelter Inu $SHINU"/>
+<meta name="twitter:description" content="Shelter Inu $SHINU">
+
+
+<link rel="canonical" href="index.html">
+
+
+        <meta name="twitter:card" content="summary" />
+<link rel="icon" type="image/png" sizes="32x32" href="img/favicon.png">
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="css/app.css" rel="stylesheet">
+    <link rel="stylesheet" href="../rsms.me/inter/inter.css">
+    <script src="../kit.fontawesome.com/82f6132430.js" crossorigin="anonymous" defer></script>
+    <script src="../cdn.jsdelivr.net/npm/js-cookie%40rc/dist/js.cookie.min.js"></script>
+    <script src="../cdn.jsdelivr.net/gh/alpinejs/alpine%40v2.8.1/dist/alpine.min.js" defer></script>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-VKZ94Z0B0C"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-VKZ94Z0B0C');
+</script>
+
+</head>
+
+<body class="bg-bg" data-theme="dark">
+    <div data-timeout="0" data-cookie="2" class="hidden w-full popup-holder text-center py-3 border-b">
+<div class="container flex justify-center items-center">
+	<p class="text-xs font-bold">Help our favorites pets.</p>
+	<button class="popup-exit text-sm text-primary px-2"> <i class="fas fa-times"></i> </button>
+</div>
+</div>
+    <div class="relative w-full min-h-screen">
+                    <div class="sticky top-0 z-40 w-full shadow-2xl bg-light">
+    <div class="container flex items-center justify-between py-3" x-data="{ mobileOpen: false }">
+        <a href="index.html">
+            <img width="150" src="img/logo.png" alt="$SHINU"></a>
+
+        <div class="justify-between hidden w-full px-10 md:flex" style="max-width:490px;">
+            <li class="flex items-center mt-0 list-none mx-sm md:block">
+                                    <a class="relative text-sm text-gray-300 hover:text-white" href="#why">About</a>
+                            </li>
+            <li class="flex items-center mt-0 list-none mx-sm md:block">
+                                    <a class="relative text-sm text-gray-300 hover:text-white" href="#roadmap">Roadmap</a>
+                            </li>
+            
+            <li class="flex items-center mt-0 list-none mx-sm md:block">
+                <a target="_blank" class="relative text-sm text-gray-300 hover:text-white"
+                    href="files/WPaper.pdf">Whitepaper</a>
+            </li>
+            <li class="flex items-center mt-0 list-none mx-sm md:block">
+                <a target="_blank" class="relative text-sm text-gray-300 hover:text-white"
+                    href="https://exchange.pancakeswap.finance">PCS</a>
+            </li>
+        </div>
+
+
+
+        <div class="absolute top-0 right-0 z-10 w-3/4 h-screen overflow-y-auto border-l bg-light md:hidden"
+            x-show.transition.duration.300ms.opacity="mobileOpen">
+            <div class="px-10 pt-32 pb-20 text-center">
+                <li class="mb-5 text-right list-none mx-sm md:block">
+                                            <a class="relative my-2 text-xl text-gray-300 hover:text-white" href="index.html#why">About</a>
+                                    </li>
+                <li class="mb-5 text-right list-none mx-sm md:block">
+
+                                            <a class="relative my-2 text-xl text-gray-300 hover:text-white" href="#roadmap">Roadmap</a>
+                                    </li>
+                <li class="mb-5 text-right list-none mx-sm md:block" x-data="{open: false}">
+                    <a class="relative my-2 text-xl text-gray-300 hover:text-white" href="#"
+                        @click.prevent="open = !open">Products <span
+                            class="text-xs tracking-widest uppercase text-primary">Soon</span> <i
+                            class="fas fa-chevron-down"></i></a>
+                    <ul x-show.transition.duration.200ms.opacity="open" @click.away="open = false" class="">
+                        <li class="my-1 list-none opacity-75 hover:opacity-100"><a href="nft.html"
+                                class="text-white">NFTs</a></li>
+                        <li class="my-1 list-none opacity-75 hover:opacity-100"><a href="staking.html"
+                                class="text-white">Staking</a></li>
+                        <li class="my-1 list-none opacity-75 hover:opacity-100"><a href="bets.html"
+                                class="text-white">Bets</a></li>
+                        <li class="my-1 list-none opacity-75 hover:opacity-100"><a href="launchpad.html"
+                                class="text-white">Launchpad</a></li>
+                        <li class="my-1 list-none opacity-75 hover:opacity-100"><a href="rcs.html"
+                                class="text-white">RCS</a></li>
+                        <li class="my-1 list-none opacity-75 hover:opacity-100"><a href="zone.html"
+                                class="text-white">Zone</a></li>
+                    </ul>
+                </li>
+                <li class="mb-5 text-right list-none mx-sm md:block">
+                    <a target="_blank" class="relative my-2 text-xl text-gray-300 hover:text-white"
+                        href="files/WPaper.pdf">Wpaper</a>
+                </li>
+                <li class="mb-5 text-right list-none mx-sm md:block">
+                    <a target="_blank" class="relative my-2 text-xl text-gray-300 hover:text-white"
+                        href="https://exchange.pancakeswap.finance">PCS</a>
+                </li>
+            </div>
+        </div>
+
+                                    
+        
+
+        <button class="z-20 block w-10 ml-5 text-xl border-none focus:outline-none hover:text-white md:hidden"
+            @click.prevent="mobileOpen = !mobileOpen">
+            <i x-show="!mobileOpen" class="fas fa-bars"></i>
+            <i x-show="mobileOpen" class="fas fa-times"></i>
+        </button>
+    </div>
+</div>
+            
+    <div class="absolute w-full overflow-hidden" style="height:100%;" data-inview>
+	<div class="absolute top-0 transform rotate-45 opacity-50 bg-light -translate-y-3/4 -translate-x-80" style="width:110vw; height:110vw;"></div>
+	<div class="absolute top-0 transform rotate-45 -translate-x-1/2 opacity-50 bg-light -translate-y-3/4" style="width:110vw; height:110vw;"></div>
+	<div class="absolute top-0 transform rotate-45 translate-x-1/2 opacity-50 bg-light -translate-y-3/4" style="width:110vw; height:110vw;"></div>
+</div>
+<div class="relative md:mb-20">
+	<div class="container relative items-center pt-20 lg:flex">
+        <div class="text-center lg:pr-10 lg:pl-0 md:px-10 lg:text-left">
+            <p class="tracking-widest text-white uppercase font-fira" data-inview>BUY <b class="text-primary">$SHINU</b></p>
+            <h1 class="my-5" data-inview>
+                SHELTER INU <br> The only community token that saves abandonned pets
+            </h1>
+            <p class="mb-8" data-inview>Shelter Inu, the first token that helps animal shelters and offers a second chance to abused fur balls, powered by every transaction made through our liquidity pool.</p>
+            <a href="https://exchange.pancakeswap.finance" class="mr-3 btn btn-primary" data-inview>Pancake Swap</a>
+
+            <a href="https://t.me/ShelterInu" class="btn btn-white" data-inview>Telegram</a>
+
+            <div class="flex items-center flex-grow-0 hidden w-1/2 gap-10 mt-10">
+                <img class="flex-grow-0 flex-shrink-0 h-8 my-0" src="img/partners/1.png" alt="">
+                <img class="flex-grow-0 flex-shrink-0 h-5 my-0" src="img/partners/2.png" alt="">
+            </div>
+            <div class="mt-10">
+                <a href="" target="_blank">
+                    <small>Audited soon</small>
+                    <img class="lg:mx-0 mx-auto" src="" alt="">
+                </a>
+            </div>
+            
+
+        </div>
+		<div class="flex items-center justify-center lg:ml-20 h-96 mx-auto md:w-96 flex-shrink-0">
+			
+            <a href="index.html">
+                <img width="300" src="img/shinu.gif" alt="$GHINU">
+            </a>
+		</div>
+	</div>
+</div>
+    <div class="relative">
+        <div class="relative section">
+	<div class="container">
+		<div class="mx-auto mb-16 text-center md:w-2/3" x-data="{ open: false }">
+			<h2 class="h1" data-inview>TOKENOMICS</h2>
+			<p data-inview>
+                
+
+            </p>
+		</div>
+        <div class="justify-center grid-cols-3 text-left md:grid gap-x-10 gap-y-14">
+            <div class="px-3 mb-10 text-center md:mb-0 " data-inview>
+                <div class="inline-block mx-auto my-5 text-primary" style="font-size:45px;">
+                    <i> <img width="50" src="img/1.png" alt="$SHINU"></i>
+                </div>
+                <h2>1 000 Trillions $SHINU</h2>
+                <p>Total Token Supply</p>
+            </div>
+            <div class="px-3 mb-10 text-center md:mb-0 " data-inview>
+                <div class="inline-block mx-auto my-5 text-primary" style="font-size:45px;">
+                    <i> <img width="50" src="img/2.png" alt="$SHINU"></i>
+                </div>
+                <h2>400 Trillions $SHINU BURNT</h2>
+
+                <p>40% of the supply has been burnt</p>
+            </div>
+
+            <div class="px-3 mb-10 text-center md:mb-0 " data-inview>
+                <div class="inline-block mx-auto my-5 text-primary" style="font-size:45px;">
+                    <i> <img width="50" src="img/3.png" alt="$SHINU"></i>
+                </div>
+                <h2>180 Trillions $SHINU</h2>
+                <p>Public Sale<br><span class="text-sm">1 000 $SHINU = NaN BNB</span></p>
+            </div>
+            <div class="px-3 mb-10 text-center md:mb-0 " data-inview>
+                <div class="inline-block mx-auto my-5 text-primary" style="font-size:45px;">
+                    <i> <img width="50" src="img/4.png" alt="$SHINU"></i>
+                </div>
+                <h2>420 Trillions $SHINU</h2>
+                <p>Liquidity</p>
+            </div>
+            <div class="px-3 mb-10 text-center md:mb-0 " data-inview>
+                <div class="inline-block mx-auto my-5 text-primary" style="font-size:45px;">
+                    <i> <img width="50" src="img/5.png" alt="$SHINU"></i>
+                </div>
+                <h2>NO TEAM TOKENS </h2>
+                <p>Team doesn't have an allocation</p>
+            </div>
+            <div class="px-3 mb-10 text-center md:mb-0 " data-inview>
+                <div class="inline-block mx-auto my-5 text-primary" style="font-size:45px;">
+                    <i> <img width="50" src="img/6.png" alt="$SHINU"></i>
+                </div>
+                <h2>10% Tax </h2>
+                <p>4% to holders, 4% Shelter tax, 2% Liquidity Pool</p>
+            </div>
+
+
+        </div>
+
+		
+
+	</div>
+</div>
+        <div class="relative section">
+    <div id="why" class="absolute -top-32"></div>
+	<div class="container text-center">
+		<div class="mx-auto mb-16">
+            <h2 class="h1" data-inview>Let’s make the world a better place</h2>
+            <p data-inview>
+                Shelter Inu is a shelter meme token that will help abandoned pets through animal shelters and associations, that are overwhelmed and cannot provide for the needs and welfare of abandoned animals over the time, and have to see millions of them being euthanized every year. As a community we could help thousands if not millions of little fur balls ! Let’s make our trading profitable and resolve the actual and real problem of our society.
+            </p>
+		</div>
+        <div class="grid-cols-3 gap-6 md:grid">
+            <div class="p-3 py-10 mb-5 text-center bg-light md:mb-0" data-inview>
+                <h3 class="font-fira text-primary">Community Driven</h3>
+                <p>Community will choose the charity to receive the donation, that could either be a local animal shelter or a NGO</p>
+            </div>
+            <div class="p-3 py-10 mb-5 text-center bg-light md:mb-0" data-inview>
+                <h3 class="font-fira text-primary">Shelter Tax</h3>
+                <p>The Shelter tax provides for weekly donations, marketing and overall to advance the project</p>
+            </div>
+            <div class="p-3 py-10 mb-5 text-center bg-light md:mb-0" data-inview>
+                <h3 class="font-fira text-primary">Funds Stability</h3>
+                <p>Holders get 4% auto-yield farming by holding and liquidity pool gets more stable each tx because of the 2% LP tax</p>
+            </div>
+            <div class="p-3 py-10 mb-5 text-center bg-light md:mb-0" data-inview>
+                <h3 class="font-fira text-primary">Black Hole</h3>
+                <p>
+                    Since 40% of the supply is burned,
+                    the dead adress collects a significant amount of token.
+                    Every transaction makes $SHINU rarer
+                </p>
+            </div>
+            <div class="p-3 py-10 mb-5 text-center bg-light md:mb-0" data-inview>
+                <h3 class="font-fira text-primary">No Team Tokens</h3>
+                <p>Team does not own any team token, funds stability is primordial</p>
+            </div>
+            <div class="p-3 py-10 mb-5 text-center bg-light md:mb-0" data-inview>
+                <h3 class="font-fira text-primary">The ultimate meme token</h3>
+                <p>Shelter Inu is the only meme token that will help abandoned pets through blockchain taxes</p>
+            </div>
+            
+        </div>
+		<div class="items-center justify-center w-full gap-10 my-10 text-center md:flex">
+			<p data-inview>Questions? Ask our dev team or community on Telegram</p>
+			<a href="https://t.me/ShelterInu" class="mt-3 btn btn-white md:ml-4 md:mt-0" data-inview>Telegram</a>
+		</div>
+	</div>
+</div>
+        <div class="relative section">
+    <div id="roadmap" class="absolute -top-32"></div>
+    <div class="container">
+        <div class="mx-auto mb-16 text-center md:w-1/2">
+            <h2 class="h1" data-inview>ROADMAP</h2>
+        </div>
+        <div class="grid items-start gap-5 lg:grid-cols-3">
+            <div class="p-10 mb-5 text-center border rounded lg:text-left">
+                <p class="flex items-center justify-center w-10 h-10 mx-auto mb-5 text-sm border rounded-full font-fira text-primary border-primary lg:mx-0"
+                    data-inview>July</p>
+                <ul>
+                                            <li data-inview class="my-3 text-white list-none">
+                             <i class="fas fa-check text-primary"></i>
+                             New website
+                        </li>
+                                            <li data-inview class="my-3 text-white list-none">
+                             <i class="fas fa-check text-primary"></i>
+                             Whitepaper
+                        </li>
+                                            <li data-inview class="my-3 text-white list-none">
+                             <i class="fas fa-check text-primary"></i>
+                             Presale
+                        </li>
+                                            <li data-inview class="my-3 text-white list-none">
+                             <i class="fas fa-check text-primary"></i>
+                             Listing of $SHINU
+                        </li>
+                                            <li data-inview class="my-3 text-white list-none">
+                             <i class="fas fa-check text-primary"></i>
+                             Marketing program
+                        </li>
+                                            <li data-inview class="my-3 text-white list-none">
+                             <i class="fas fa-check text-primary"></i>
+                             Community events
+                        </li>
+                                            <li data-inview class="my-3 text-white list-none">
+                             Audit
+                        </li>
+                                    </ul>
+            </div>
+            <div class="p-10 mb-5 text-center border rounded lg:text-left">
+                <p data-inview
+                    class="flex items-center justify-center w-10 h-10 mx-auto mb-5 text-sm border rounded-full font-fira text-primary border-primary lg:mx-0">
+                    Aug</p>
+                <ul>
+                                            <li data-inview class="my-3 text-white list-none">
+                             Coingecko & CMC listing
+                        </li>
+                                            <li data-inview class="my-3 text-white list-none">
+                             AMAs
+                        </li>
+                                            <li data-inview class="my-3 text-white list-none">
+                             Team expansion
+                        </li>
+                                            <li data-inview class="my-3 text-white list-none">
+                             Weekly donations
+                        </li>
+                                    </ul>
+            </div>
+            <div class="p-10 text-center border rounded lg:text-left">
+                <p data-inview
+                    class="flex items-center justify-center w-10 h-10 mx-auto mb-5 text-sm border rounded-full font-fira text-primary border-primary lg:mx-0">
+                     Sept</p>
+                <ul>
+                    <li data-inview class="my-3 text-white list-none">
+                        <i class="fas fa-check text-primary"></i>
+                        Exclusive partnership
+                    </li>
+                    <li data-inview class="my-3 text-white list-none">
+                        <i class="fas fa-check text-primary"></i>
+                        Marketing push
+                    </li>
+                    <li data-inview class="my-3 text-white list-none">
+                        <i class="fas fa-check text-primary"></i>
+                        Found our own Shelter
+                    </li>
+                    <li data-inview class="my-3 text-white list-none">
+                        <i class="fas fa-check text-primary"></i>
+                        Celebrity involvement
+                    </li>
+                    <li data-inview class="my-3 text-white list-none">
+                        <i class="fas fa-check text-primary"></i>
+                        NFT with real use case
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div>
+        </div>
+    </div>
+</div>
+        <div class="section">
+    <div class="container text-center">
+        <div class="mx-auto mb-16 md:w-1/2">
+            <h2 data-inview class="h1">How to buy $SHINU</h2>
+        </div>
+        <div class="grid-cols-4 gap-6 md:grid">
+                            <div data-inview class="mb-5 break-words md:mb-0">
+                    <span class="text-sm text-primary">
+                        .01
+                    </span>
+                    <h4>Download Metamask</h4>
+                                            <p class="md:text-sm">Set up a wallet and fund with BNB</p>
+                                    </div>
+                            <div data-inview class="mb-5 break-words md:mb-0">
+                    <span class="text-sm text-primary">
+                        .02
+                    </span>
+                    <h4>Go to PancakeSwap</h4>
+                                            <p class="md:text-sm">
+                            On <a href="https://exchange.pancakeswap.finance" target="_blank">Pancake Swap</a> connect your
+                            Metamask
+                        </p>
+                                    </div>
+                            <div data-inview class="mb-5 break-words md:mb-0">
+                    <span class="text-sm text-primary">
+                        .03
+                    </span>
+                    <h4>Add $SHINU</h4>
+                                            <p class="md:text-sm">
+                            <a href="https://exchange.pancakeswap.finance/" target="_blank">Click this link</a> which will
+                            pre-fill our address in your "To" field and set slippage to 5%
+                        </p>
+                                    </div>
+                            <div data-inview class="mb-5 break-words md:mb-0">
+                    <span class="text-sm text-primary">
+                        .04
+                    </span>
+                    <h4>Add to Metamask</h4>
+                                            <p class="md:text-sm">Add our address below to your Metamask to see your $SHINU holdings.</p>
+                                    </div>
+                    </div>
+        <div class="items-center justify-center w-full my-10 text-center md:flex">
+            <p data-inview class="md:mr-3">Contract:</p>
+            <p data-inview class="px-5 font-bold text-white"><a
+                    href="https://bscscan.com/address/"
+                    target="_blank">Soon</a></p>
+        </div>
+    </div>
+</div>
+    </div>
+
+            <div class="relative">
+	<div class="absolute bottom-0 left-0 w-full overflow-hidden" style="height:200vh; z-index:-1;">
+		<div class="absolute bottom-0 transform rotate-45 opacity-50 bg-light translate-y-3/4 -translate-x-80" style="width:110vw; height:110vw;"></div>
+		<div class="absolute bottom-0 transform rotate-45 -translate-x-1/2 opacity-50 bg-light translate-y-3/4" style="width:110vw; height:110vw;"></div>
+		<div class="absolute bottom-0 transform rotate-45 translate-x-1/2 opacity-50 bg-light translate-y-3/4" style="width:110vw; height:110vw;"></div>
+	</div>
+	
+
+
+	<div class="py-5">
+		<div class="container flex items-center justify-between py-5">
+			<a data-inview href="index.html">
+				<img width="230" src="img/logo.png" alt="$SHINU"></a>
+
+							<li data-inview class="flex items-center hidden mt-0 list-none mx-sm md:block">
+					<a target="_blank" class="text-2xl text-gray-300 hover:text-white" href="https://t.me/ShelterInu"><i class="fab fa-telegram-plane"></i></a>
+				</li>
+					
+							<li data-inview class="flex items-center hidden mt-0 list-none mx-sm md:block">
+					<a target="_blank" class="text-2xl text-gray-300 hover:text-white" href="https://twitter.com/ShelterInu"><i class="fab fa-twitter"></i></a>
+				</li>
+			
+			<a href="https://exchange.pancakeswap.finance/" class="ml-5 btn btn-primary md:ml-0">Pancake Swap</a>
+						</div>
+		<div class="container flex justify-center w-full py-3 md:hidden">
+							<li data-inview class="flex items-center mx-6 mt-0 list-none mx-sm md:block">
+					<a class="text-gray-300 text-nav hover:text-white" href="https://t.me/ShelterInu"><i class="text-2xl fab fa-telegram-plane"></i></a>
+				</li>
+					
+							<li data-inview class="flex items-center mx-6 mt-0 list-none mx-sm md:block">
+					<a class="text-gray-300 text-nav hover:text-white" href="https://twitter.com/ShelterInu"><i class="text-2xl fab fa-twitter"></i></a>
+				</li>
+					</div>
+	</div>
+
+</div>
+            </div>
+
+    <script src="js/app.js"></script>
+
+</body>
+
+
+
+</html>
